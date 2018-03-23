@@ -9,7 +9,6 @@ var json2csv = require('json2csv');
 // shopping website to scrape
 var url = "http://shirts4mike.com";
 
-
 var productTitle = [];
 var productPrice = [];
 var productImage = [];
@@ -17,7 +16,7 @@ var productURL = [];
 var productTime = [];
 
 // create CSV headers
-var header = ["Title", "Price", "ImageURL", "URL", "Time"]
+var header = ["Title", "Price", "ImageURL", "URL", "Time"];
 
 request(url, function(error, response, body ) {
 	
@@ -65,6 +64,7 @@ request(url, function(error, response, body ) {
 		});
 	}
 
+	//display error in console if a 404 occurs
 	if(response.statusCode === 404) {
 
 			console.log("There’s been a 404 error. Cannot connect to http://shirts4mike.com.")
