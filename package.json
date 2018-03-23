@@ -1,0 +1,12 @@
+{
+  "name"         : "Build-a-Content-scraper",
+  "version"      : "0.0.1",
+  "description"  : "Build a Content Scraper",
+  "main"         : "scraper.js",
+  "author"       : "Craig Weston",
+  "dependencies" : {
+    "json2csv"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest"
+  }
+}
